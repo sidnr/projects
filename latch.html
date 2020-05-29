@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+	<meta charset="utf-8">
+	<title>Latches</title>
+	<link rel="stylesheet" href="style_pages.css">
+</head>
+<body>
+<h1>Latches</h1>
+<p>A latch is fundamental element in sequential ciruits. It stores 1-bit of information. One can refers this operation 
+as "Latching" similar to that of storing. The excitation table depicts the functioning of the NOR Latch.</p>
+
+<div class="row">
+		<div id="image">
+			<img src="sr_latch.png" alt="latch" height = "145" width= "220">
+			<h5>Fig 1.1: NOR Latch</h5>
+		</div>
+
+		<div id="e_table">
+		<table><tr> <th>S</th><th>R</th><th>Q(n+1)</th> </tr>
+        	    <tr> <td>0</td><td>0</td><td>Q(n)</td> </tr>
+            	<tr> <td>0</td><td>1</td><td>0</td> </tr>
+            	<tr> <td>1</td><td>0</td><td>1</td> </tr>
+            	<tr> <td>1</td><td>1</td><td>X</td> </tr></table>
+        	<h5>Table 1.1: Excitation Table</h5>
+    	</div>
+ 		<div id="info">
+ 			<p>As we can see in Fig 1.1 the structure of a Latch composed of two NOR gates, one of the univeral gates.
+			The two feedback paths is what makes it a memory element. Thus, circuitary
+			of a digital systems consists of such elements and can have several feedback paths. 
+			The excitation table depicts the functioning of the NOR Latch.
+			</p>
+ 		 <p>When S(set-input) and R(reset-input) are '0' the Latch will retain its previous state i.e. Q(n), hence functioning as a "Memory". When the input, SET = '1', output is set to '1' as soon as RESET remains '0' and ouput gets reset or made clear - '0' when RESET = '1'.
+ 		Further, if we try and set both input to '1', the latch will go into "Meta-Stable State". It's an unexpected result.</p>
+ 		<div id="links"> 
+ 			<a href="index.html">Homepage</a>
+ 			<a href="ff.html">Next Page</a>
+ 			<a href="intro.html">Previous Page</a>
+ 		</div>
+ 	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+	<meta charset="utf-8">
+	<title>Flip-Flops</title>
+	<link rel="stylesheet" href="style_pages.css"> 
+</head>
+<body>
+<h1>Flip-Flops</h1>
+
+<p>A flip-flop is a device which stores a single bit (binary digit) of data; one of its two states represents a "one" and the other represents a "zero". 
+Such data storage can be used for storage of state, and such a circuit is described as sequential logic in electronics.</p>
+<h2><li>SR Flip-Flop:</li></h2>
+<div class="row">
+		<div id="image">
+			<img src="sr_ff.png" alt="SR_FF" height = "145" width= "240">
+			<h5>Fig 1.2: SR Flip-Flop</h5>
+		</div>
+
+		<div id="e_table">
+		<table><tr><th>E</th> <th>S</th><th>R</th><th>Q(n+1)</th> </tr>
+        	    <tr><td>0</td><td>X</td><td>X</td><td>Q(n)</td> </tr>
+            	<tr><td>1</td><td>0</td><td>0</td><td>Q(n)</td> </tr>
+            	<tr><td>1</td> <td>0</td><td>1</td><td>0</td> </tr>
+            	<tr><td>1</td> <td>1</td><td>0</td><td>1</td> </tr>
+            	<tr><td>1</td> <td>1</td><td>1</td><td>X</td> </tr>
+            </table>
+        	<h5>Table 1.2: Excitation Table</h5>
+    	</div>
+ 		<div id="info">
+ 			<p>Fig 1.2 depicts SR Flip-Flop which is built using NOR Latch. The flip-flop will function only if E i.e. Enable input is '1'.
+			</p>
+ 		 <p>The flip-flop holds its previous state when it's not functioning. Any change in inputs has no effects in output, hence 'X' is don't care condition. Functionality remains same as that of NOR latch. Enable input can be 'level triggered' or 'edge triggered'.</p>
+ 	</div>
+</div>
+
+<h2><li>D Flip-Flop:</li></h2>
+<div class="row">
+		<div id="image">
+			<img src="d_ff.png" alt="D_FF" height = "160" width= "280">
+			<h5>Fig 1.3: D Flip-Flop</h5>
+		</div>
+
+		<div id="image">
+			<img src="D_ET.png" alt="D_FF" height = "160" width= "280">
+			<h5>Table 1.3: Excitation Table</h5>
+		</div>
+
+        	
+ 		<div id="info">
+ 			<p>Fig 1.2 depicts D Flip-Flop. The flip-flop will function only on positive edge of the clock pulse.
+			</p>
+ 		 <p>The 'D' in its name indicate 'Delay' of one clock pulse. It samples the input data and produces output after a clock pulse.</p>
+ 		<div id="links"> 
+ 			<a href="index.html">Homepage</a>
+ 			<a href="latch.html">Previous Page</a>
+ 			<a href="app.html">Next Page</a>
+ 		</div>
+ 	</div>
+</div>
+</body>
+</html>
